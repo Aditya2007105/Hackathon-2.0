@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Management Tool</h1>
+
+    <!-- Student Saving Manager -->
+    <section id="student-manager">
+        <h2>Student Savings Manager</h2>
+        <form id="saving-form">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" required>
+            <label for="amount">Amount to Save:</label>
+            <input type="number" id="amount" required>
+            <button type="submit">Add Savings</button>
+        </form>
+        <ul id="savings-list"></ul>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section">
+        <h2>Student Quiz</h2>
+        <div id="quiz-container">
+            <p id="question"></p>
+            <div id="options-container"></div>
+            <p id="quiz-feedback"></p>
+        </div>
+    </section>
+
+    <!-- Fraud Detection Tool -->
+    <h2>Fraud Detection Tool</h2>
+    <input type="number" id="transactionAmount" placeholder="Enter transaction amount">
+    <input type="text" id="location" placeholder="Enter transaction location">
+    <input type="time" id="transactionTime" placeholder="Enter transaction time">
+    <button onclick="detectFraud()">Check for Fraud</button>
+    <p id="fraudResult"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
